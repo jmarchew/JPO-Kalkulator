@@ -3,7 +3,7 @@
 #include <vector>
 
 Calculator c;
-//vector to hold operator values in order: '+','-','*','/','OR','AND','NOR','NAND','XOR','NOT'
+//vector to hold operator values in order: '+','-','*','/','OR','AND','NOR','NAND','XOR','XNOR'
 std::vector<bool> operators(10,false);
 
 double value{};
@@ -43,7 +43,7 @@ mainWindow::mainWindow(QWidget *parent)
     connect(ui.ButtonXOR, SIGNAL(clicked()), this, SLOT(operatorPressed()));
     
     //not button
-    connect(ui.ButtonNOT, SIGNAL(clicked()), this, SLOT(operatorPressed()));
+    connect(ui.ButtonXNOR, SIGNAL(clicked()), this, SLOT(operatorPressed()));
 
     //A-F buttons
     connect(ui.ButtonA, SIGNAL(clicked()), this, SLOT(alphaPressed()));
@@ -159,7 +159,7 @@ void mainWindow::operatorPressed() {
     else if (op == "XOR") {
         operators[8] = true;
     }
-    else if (op == "NOT") {
+    else if (op == "XNOR") {
         operators[9] = true;
     }
    
@@ -200,7 +200,7 @@ void mainWindow::equalPressed() {
         result = c.bxor();
     }
     else if (operators[9]) {
-        result = c.bnot();
+        result = c.bxnor();
     }
 
     c.setAns(result);
@@ -282,7 +282,8 @@ void mainWindow::changeButtonState(bool dMode, bool bMode, bool oMode, bool hMod
     ui.ButtonNOR->setDisabled(dMode);
     ui.ButtonNAND->setDisabled(dMode);
     ui.ButtonXOR->setDisabled(dMode);
-    ui.ButtonNOT->setDisabled(dMode);
+    ui.ButtonXNOR->setDisabled(dMode);
+    ui.ButtonSign->setEnabled(dMode);
 }
 
 //function for changing numeral system

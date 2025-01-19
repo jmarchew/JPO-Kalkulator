@@ -283,7 +283,7 @@ QPushButton:pressed{
      </widget>
     </item>
     <item row="9" column="5">
-     <widget class="QPushButton" name="ButtonNOT">
+     <widget class="QPushButton" name="ButtonXNOR">
       <property name="styleSheet">
        <string notr="true">QPushButton{
 	background-color: #FF4500;
@@ -306,7 +306,7 @@ QPushButton:disabled{
 }</string>
       </property>
       <property name="text">
-       <string>NOT</string>
+       <string>XNOR</string>
       </property>
      </widget>
     </item>

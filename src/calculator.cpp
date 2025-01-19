@@ -73,12 +73,12 @@ double Calculator::multi() {
 }
 
 double Calculator::div() {
-	if (num2 != 0) {
-		return num1 / num2;
-	}
-	else {
-		return 0;
-	}
+    if (num2 != 0) {
+        return num1 / num2;
+    }
+    else {
+        return 0;
+    }
 }
 
 double Calculator::bor() {
@@ -101,8 +101,8 @@ double Calculator::bxor() {
 	return (int)num1 ^ (int)num2;
 }
 
-double Calculator::bnot() {
-	return (int)num1 & (int)num2;
+double Calculator::bxnor() {
+	return ~((int)num1 ^ (int)num2);
 }
 
 //function converting result stored in double ans to string for display purpouse
@@ -194,7 +194,6 @@ std::string Calculator::convert(std::string value, int prevMode) {
     
     // convertion from decimal
     if (prevMode == 0) { 
-
         //converting string to long long decimal number
         num = std::stoll(value, nullptr, 10);
     }

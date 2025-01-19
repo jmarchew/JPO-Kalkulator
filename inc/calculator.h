@@ -42,7 +42,7 @@ public:
 
 	double bxor();
 
-	double bnot();
+	double bxnor();
 
 	//function for binary readability
 	std::string fixBin(std::string bin);
