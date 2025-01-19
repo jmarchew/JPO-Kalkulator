@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>mainWindow</class>
+ <widget class="QMainWindow" name="mainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>506</width>
+    <height>332</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Kalkulator</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow{
+	background-color: #262526;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget{
+	background-color: #262526;
+}</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="6" column="2">
+     <widget class="QPushButton" name="Button2">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>2</string>
+      </property>
+      <property name="shortcut">
+       <string>2</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="4">
+     <widget class="QPushButton" name="ButtonDiv">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #FF4500;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #a32f03;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>/</string>
+      </property>
+      <property name="shortcut">
+       <string>/</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="1">
+     <widget class="QPushButton" name="ButtonAns">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>ANS</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="1">
+     <widget class="QPushButton" name="ButtonClean">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>CE</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="Button7">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>7</string>
+      </property>
+      <property name="shortcut">
+       <string>7</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="2">
+     <widget class="QPushButton" name="ButtonBIN">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #00BFFF;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #6495ED;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>BIN</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="5">
+     <widget class="QPushButton" name="ButtonNOT">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #FF4500;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #a32f03;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>NOT</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="0">
+     <widget class="QPushButton" name="ButtonD">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>D</string>
+      </property>
+      <property name="shortcut">
+       <string>D</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">hexButtons</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="5" column="5">
+     <widget class="QPushButton" name="ButtonAND">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #FF4500;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #a32f03;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>AND</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="3">
+     <widget class="QPushButton" name="Button9">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>9</string>
+      </property>
+      <property name="shortcut">
+       <string>9</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="0">
+     <widget class="QPushButton" name="ButtonF">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>F</string>
+      </property>
+      <property name="shortcut">
+       <string>F</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">hexButtons</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QPushButton" name="ButtonA">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>A</string>
+      </property>
+      <property name="shortcut">
+       <string>A</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">hexButtons</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="7" column="5">
+     <widget class="QPushButton" name="ButtonNAND">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #FF4500;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #a32f03;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>NAND</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="0">
+     <widget class="QPushButton" name="ButtonE">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>E</string>
+      </property>
+      <property name="shortcut">
+       <string>E</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">hexButtons</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QPushButton" name="ButtonB">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>B</string>
+      </property>
+      <property name="shortcut">
+       <string>B</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">hexButtons</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="8" column="4">
+     <widget class="QPushButton" name="ButtonPlus">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #FF4500;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #a32f03;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+      <property name="shortcut">
+       <string>+</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="0">
+     <widget class="QPushButton" name="ButtonC">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>C</string>
+      </property>
+      <property name="shortcut">
+       <string>C</string>
+      </property>
+      <attribute name="buttonGroup">
+       <string notr="true">hexButtons</string>
+      </attribute>
+     </widget>
+    </item>
+    <item row="7" column="3">
+     <widget class="QPushButton" name="ButtonDot">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>.</string>
+      </property>
+      <property name="shortcut">
+       <string>.</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="4">
+     <widget class="QPushButton" name="ButtonBack">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>&lt;-</string>
+      </property>
+      <property name="shortcut">
+       <string>Backspace</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="4">
+     <widget class="QPushButton" name="ButtonEqual">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #FF4500;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #a32f03;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>=</string>
+      </property>
+      <property name="shortcut">
+       <string>Return</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="1">
+     <widget class="QPushButton" name="Button4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>4</string>
+      </property>
+      <property name="shortcut">
+       <string>4</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QPushButton" name="Button8">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>8</string>
+      </property>
+      <property name="shortcut">
+       <string>8</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="4">
+     <widget class="QPushButton" name="ButtonMulti">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #FF4500;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #a32f03;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>*</string>
+      </property>
+      <property name="shortcut">
+       <string>*</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="5">
+     <widget class="QPushButton" name="ButtonNOR">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #FF4500;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #a32f03;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>NOR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="2">
+     <widget class="QPushButton" name="Button0">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="shortcut">
+       <string>0</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="5">
+     <widget class="QPushButton" name="ButtonOR">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #FF4500;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #a32f03;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>OR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="4">
+     <widget class="QPushButton" name="ButtonMinus">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #FF4500;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #a32f03;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>-</string>
+      </property>
+      <property name="shortcut">
+       <string>-</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="1">
+     <widget class="QPushButton" name="Button1">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>1</string>
+      </property>
+      <property name="shortcut">
+       <string>1</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="3">
+     <widget class="QPushButton" name="Button6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>6</string>
+      </property>
+      <property name="shortcut">
+       <string>6</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="2">
+     <widget class="QPushButton" name="ButtonDEC">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #00BFFF;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #6495ED;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>DEC</string>
+      </property>
+     </widget>
+    </item>
+    <item row="9" column="3">
+     <widget class="QPushButton" name="ButtonOCT">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #00BFFF;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #6495ED;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>OCT</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="3">
+     <widget class="QPushButton" name="ButtonHEX">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #00BFFF;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #6495ED;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>HEX</string>
+      </property>
+     </widget>
+    </item>
+    <item row="6" column="3">
+     <widget class="QPushButton" name="Button3">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>3</string>
+      </property>
+      <property name="shortcut">
+       <string>3</string>
+      </property>
+     </widget>
+    </item>
+    <item row="7" column="1">
+     <widget class="QPushButton" name="ButtonSign">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>+/-</string>
+      </property>
+     </widget>
+    </item>
+    <item row="8" column="5">
+     <widget class="QPushButton" name="ButtonXOR">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color: #FF4500;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+
+QPushButton:pressed{
+	background-color: #a32f03;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>XOR</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2">
+     <widget class="QPushButton" name="Button5">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>10</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+	background-color:#4a4949;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:pressed{
+	background-color: #696969;
+	color: #ebeff5;
+	border: 1px solid gray;
+	padding: 5px;
+}
+QPushButton:disabled{
+	background-color:#292929;
+	color: #4a4949;
+	border: 1px solid gray;
+	padding: 5px;
+}</string>
+      </property>
+      <property name="text">
+       <string>5</string>
+      </property>
+      <property name="shortcut">
+       <string>5</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="6">
+     <widget class="QLineEdit" name="Display">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>Consolas</family>
+        <pointsize>11</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LayoutDirection::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	background-color: #262526;
+	color: #f5eeeb;
+	border: 1px solid gray;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>0</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignRight|Qt::AlignmentFlag::AlignTrailing|Qt::AlignmentFlag::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>506</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="hexButtons"/>
+ </buttongroups>
+</ui>
