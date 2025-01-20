@@ -202,6 +202,9 @@ void mainWindow::equalPressed() {
     else if (operators[9]) {
         result = c.bxnor();
     }
+    else {
+        result = 0;
+    }
 
     c.setAns(result);
     displayText = QString::fromStdString(c.result());

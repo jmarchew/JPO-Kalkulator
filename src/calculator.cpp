@@ -138,7 +138,7 @@ std::string Calculator::result() {
         std::ostringstream oss; 
 
         // converting number to oct
-        oss << std::oct << ans; 
+        oss << std::oct << static_cast <long long > (ans);
         
         result = oss.str();
     }
@@ -149,7 +149,7 @@ std::string Calculator::result() {
         std::ostringstream oss; 
 
         // converting number to hex
-        oss << std::hex << ans; 
+        oss << std::hex << static_cast <long long> (ans);
 
         result = oss.str(); 
     }
