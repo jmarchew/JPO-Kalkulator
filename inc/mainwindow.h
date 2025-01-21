@@ -2,6 +2,7 @@
 
 #include <QtWidgets/QMainWindow>
 #include "ui_mainwindow.h"
+#include <vector>
 namespace Ui {
     class mainWindow;
 }

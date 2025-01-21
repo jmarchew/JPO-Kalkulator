@@ -1,5 +1,9 @@
 #pragma once
 #include <string>
+#include <cstdlib>
+#include <algorithm>
+#include <bitset>
+#include <sstream>
 
 class Calculator {
 private:

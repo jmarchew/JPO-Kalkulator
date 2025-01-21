@@ -1,9 +1,5 @@
 #include "../inc/calculator.h"
-#include <cmath>
-#include <cstdlib>
-#include <algorithm>
-#include <bitset>
-#include <sstream>
+
 
 Calculator::Calculator() {
 	this->num1 = 0.0;

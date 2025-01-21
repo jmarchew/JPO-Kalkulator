@@ -1,6 +1,6 @@
 #include "../inc/mainwindow.h"
 #include "../inc/calculator.h"
-#include <vector>
+
 
 Calculator c;
 //vector to hold operator values in order: '+','-','*','/','OR','AND','NOR','NAND','XOR','XNOR'
