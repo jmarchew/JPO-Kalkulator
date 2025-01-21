@@ -1,5 +1,4 @@
 #include "../inc/mainwindow.h"
-#include "../inc/calculator.h"
 #include <QtWidgets/QApplication>
 
 int main(int argc, char *argv[])
