@@ -338,7 +338,8 @@ void mainWindow::dotPressed() {
 //function to display previous result
 void mainWindow::answerPressed() {
     QString displayText;
-    double ans = c.getAns();
-    displayText = QString::number(ans, 'g', 12);
+   
+    displayText = QString::fromStdString(c.result());
     ui.Display->setText(displayText);
+    newEquation = false;
 }
