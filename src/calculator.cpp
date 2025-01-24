@@ -77,6 +77,7 @@ double Calculator::div() {
     }
 }
 
+//b means following 6 functions are bitwise
 double Calculator::bor() {
 	return (int)num1 | (int)num2;
 }
@@ -113,7 +114,7 @@ std::string Calculator::result() {
         while (result.back() == '0' && result.length()>4) {
             result.pop_back();
         }
-        //making sure no result like 5. occurs
+        //making sure no result like "5." occurs
         if (result.back() == '.') {
             result.push_back('0');
         }
@@ -134,6 +135,7 @@ std::string Calculator::result() {
         std::ostringstream oss; 
 
         // converting number to oct
+        //usage of static cast to avoid conversion bug based on chat gpt help
         oss << std::oct << static_cast <long long > (ans);
         
         result = oss.str();
@@ -144,7 +146,7 @@ std::string Calculator::result() {
         //creating string stream
         std::ostringstream oss; 
 
-        // converting number to hex
+        // converting number to hex,
         oss << std::hex << static_cast <long long> (ans);
 
         result = oss.str(); 

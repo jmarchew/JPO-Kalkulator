@@ -4,6 +4,7 @@
 
 Calculator c;
 //vector to hold operator values in order: '+','-','*','/','OR','AND','NOR','NAND','XOR','XNOR'
+//idea to store operators as boolean based on Derek Banas QT tutorial
 std::vector<bool> operators(10,false);
 
 double value{};
@@ -102,7 +103,7 @@ void mainWindow::digitPressed() {
             value = (ui.Display->text() + digit).toDouble();
             // 'g' display will automatically switch to exponential notation after 12 digits
             displayText = QString::number(value, 'g', 12);
-
+            //displaying displayText value on calculator display
             ui.Display->setText(displayText);
         }
         else {
