@@ -31,10 +31,34 @@ set_target_properties(${PROJECT_NAME}
         WIN32_EXECUTABLE TRUE
 )
 
+add_library(Calculator STATIC inc/calculator.h src/calculator.cpp)
+
 target_link_libraries(${PROJECT_NAME}
     PUBLIC
         Qt::Core
         Qt::Gui
         Qt::Widgets
+        Calculator
 )
 
+# Include GoogleTest
+include(FetchContent)
+FetchContent_Declare(
+    googletest
+    URL https://github.com/google/googletest/archive/refs/tags/release-1.11.0.zip
+)
+FetchContent_MakeAvailable(googletest)
+
+# Add your tests
+add_executable(${PROJECT_NAME}_tests tests/calculator_tests.cpp)
+target_include_directories(${PROJECT_NAME}_tests PRIVATE inc)
+
+target_link_libraries(${PROJECT_NAME}_tests
+    PRIVATE
+        gtest
+        gtest_main
+        Calculator
+)
+
+enable_testing()
+add_test(NAME CalculatorTests COMMAND ${PROJECT_NAME}_tests)
