@@ -5,6 +5,7 @@
 #include <bitset>
 #include <sstream>
 
+//this calculator class was created specifically for GUI application that ensures proper data entering
 class Calculator {
 private:
 	double num1{}, num2{};
