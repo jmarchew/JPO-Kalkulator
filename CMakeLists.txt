@@ -40,7 +40,7 @@ target_link_libraries(${PROJECT_NAME}
         Qt::Widgets
         Calculator
 )
-
+#ponizsza czesc wykonana z pomoca Copilot
 include(FetchContent)
 FetchContent_Declare(
     googletest
