@@ -41,7 +41,6 @@ target_link_libraries(${PROJECT_NAME}
         Calculator
 )
 
-# Include GoogleTest
 include(FetchContent)
 FetchContent_Declare(
     googletest
@@ -49,7 +48,7 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(googletest)
 
-# Add your tests
+
 add_executable(${PROJECT_NAME}_tests tests/calculator_tests.cpp)
 target_include_directories(${PROJECT_NAME}_tests PRIVATE inc)
 
