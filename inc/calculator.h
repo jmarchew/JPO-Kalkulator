@@ -15,7 +15,7 @@ private:
 
 public:
 	Calculator();
-
+	
 	void setNum1(std::string value);
 	
 	void setNum2(std::string value);

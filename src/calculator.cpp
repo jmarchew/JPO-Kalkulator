@@ -186,6 +186,7 @@ std::string Calculator::fixBin(std::string bin) {
 std::string Calculator::convert(std::string value, int prevMode) {
 
     //variable to store value to convert
+    //storing num as long long, converting to unsigned long long was chatgpt fix to convertion to decimal from other systems bug
     long long num = 0; 
  
     std::string result; 

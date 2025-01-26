@@ -1,6 +1,7 @@
 #include <gtest/gtest.h>
 #include "../inc/calculator.h"
 
+//constructor test
 
 TEST(CalculatorTest, ConstructorTest) {
     Calculator calc;
@@ -8,6 +9,7 @@ TEST(CalculatorTest, ConstructorTest) {
     EXPECT_DOUBLE_EQ(calc.getAns(), 0.0);  
 }
 
+//mode setter getter test
 
 TEST(CalculatorTest, modeTest) {
     Calculator calc;
@@ -21,6 +23,7 @@ TEST(CalculatorTest, modeTest) {
     EXPECT_EQ(calc.getMode(), 3);
 }
 
+//basic operations in decimal tests
 
 TEST(CalculatorTest, decAddTest) {
     Calculator calc;
@@ -60,6 +63,8 @@ TEST(CalculatorTest, decDivTest) {
     EXPECT_DOUBLE_EQ(calc.div(), 0.0);  
 }
 
+//adding in bin, oct, hex tests
+
 TEST(CalculatorTest, binAddTest) {
     Calculator calc;
     calc.setMode(1);  
@@ -84,6 +89,7 @@ TEST(CalculatorTest, hexAddTest) {
     calc.setNum2("5");  
     EXPECT_DOUBLE_EQ(calc.add(), 15.0);  
 }
+//convertion tests
 
 TEST(CalculatorTest, dec2bin) {
     Calculator calc;
